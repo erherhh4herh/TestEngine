@@ -56,10 +56,12 @@
   <ItemGroup>
     <Compile Include="Internal\Engine.cs" />
     <Compile Include="Internal\Scene.cs" />
+    <Compile Include="Pipeline\Asset.cs" />
     <Compile Include="Scripting\Behaviour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripting\Component.cs" />
     <Compile Include="Scripting\GameObject.cs" />
+    <Compile Include="Scripting\Input.cs" />
     <Compile Include="Scripting\Utils\Timer.cs" />
     <Compile Include="Scripting\Utils\TimerExtensions.cs" />
   </ItemGroup>
