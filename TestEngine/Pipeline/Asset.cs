@@ -15,7 +15,7 @@ namespace TestEngine.Pipeline
         Audio = 4
     }
 
-    public class Asset
+    public class Asset // used for inheritance, need to retrieve the asset type's class reference
     {
         // GUID or some shit
         public int ID;
