@@ -31,6 +31,23 @@ namespace TestEngine
             Engine.CurrentScene._gameObjects.Add(this);
         }
 
+        public GameObject(string name, Vector3 position)
+        {
+            Name = name;
+            Position = position;
+            Scale = new Vector3(1, 1, 1);
+            Engine.CurrentScene._gameObjects.Add(this);
+        }
+
+        public GameObject(string name, Vector3 position, Quaternion rotation, Vector3 scale)
+        {
+            Name = name;
+            Position = position;
+            Scale = scale;
+            Rotation = rotation;
+            Engine.CurrentScene._gameObjects.Add(this);
+        }
+
         public T AddComponent<T>() where T : Component
         {
             return this.internalAddComponent(typeof(T)) as T;
